@@ -1,43 +1,42 @@
-🧗‍♂️ Climbing System Plugin
-<p align="center"> <a href="https://www.youtube.com/watch?v=bDSDSq6FjFE"> <img src="https://img.youtube.com/vi/bDSDSq6FjFE/0.jpg" width="800" /> </a> </p>
+# 🧗‍♂️ Climbing System Plugin
 
-A modular Climbing System plugin for Unreal Engine 5.6, built in C++ and designed for third-person games.
+A modular **Climbing System plugin** for **Unreal Engine 5.6**, built in **C++** and designed for **third-person games**.  
 Supports ledge grabbing, climbing up and down, and traversal-ready extensions.
 
-📦 Plugin Name
+---
+## 📦 Plugin Name
 
-ClimbSystem
+**ClimbSystem**
 
-⚙️ Requirements
+---
+## ⚙️ Requirements
 
-Unreal Engine: 5.6.x
+- **Unreal Engine:** 5.6.x  
+- **Project Type:** C++ ThirdPerson project  
+  - Must contain a `Source/` folder  
+  - Blueprint-only projects are **not supported**
+- **IDE:** Visual Studio  
+  - Installed with **Game development with C++** workload
 
-Project Type: C++ ThirdPerson project
+---
+## 🚀 Getting Started
 
-Must contain a Source/ folder (Blueprint-only projects are not supported)
+1. Create or open a **C++ ThirdPerson** Unreal Engine project.
+2. Add the plugin to your project’s `Plugins/` directory.
+3. Regenerate project files and rebuild.
+4. Enable the plugin in Unreal Editor if needed.
+5. Press play and start climbing.
 
-Installed with Game development with C++ workload
+---
+## 🎥 Demo
 
-🚀 Getting Started
+Click the demo image above to watch the climbing system in action on YouTube.
 
-Create or open a C++ ThirdPerson Unreal Engine project.
+---
+## 🧩 Features (High Level)
 
-Add the plugin to your project’s Plugins/ directory.
+- Ledge detection using traces and surface normals
+- Climb up, climb down, and hang states
+- Designed for easy extension (vaulting, wall climbing, etc.)
 
-Regenerate project files and rebuild.
-
-Enable the plugin in Unreal Editor if needed.
-
-Press play and start climbing.
-
-🎥 Demo
-
-Click the image above to watch the climbing system in action on YouTube.
-
-🧩 Features (High Level)
-
-Ledge detection using traces and surface normals
-
-Climb up, climb down, and hang states
-
-Designed for easy extension (vaulting, wall climbing, etc.)
+---
