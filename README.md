@@ -32,8 +32,9 @@ Supports ledge grabbing, climbing up and down, and traversal-ready extensions.
 ## 📘 Documentation
 
 **[How to Set Up the ClimbSystem Plugin (PDF)](https://github.com/acosta3/Climbing-System-Plugin/blob/main/ClimbSystem/Doc/How%20To%20Setup%20Plugin.pdf)**  
-  Illustrated, step-by-step setup guide with screenshots showing how to integrate the plugin into a C++ Unreal Engine 5.6 project.
-🔎 Optional setup walkthrough video (Windows example, step-by-step):  [How To Set Up The Plugin](https://youtube.com/watch?v=rnQOWEQ2M0Y&feature=youtu.be)
+-  Illustrated, step-by-step setup guide with screenshots showing how to integrate the plugin into a C++ Unreal Engine 5.6 project.
+  
+-  Optional setup walkthrough video (Windows example, step-by-step):  [How To Set Up The Plugin](https://youtube.com/watch?v=rnQOWEQ2M0Y&feature=youtu.be)
 
 
 ---
