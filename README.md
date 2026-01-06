@@ -44,5 +44,6 @@ Click the demo image above to watch the climbing system in action on YouTube.
 - Ledge detection using traces and surface normals
 - Climb up, climb down, and hang states
 - Designed for easy extension (vaulting, wall climbing, etc.)
+- Hop up and  hop down
 
 ---
