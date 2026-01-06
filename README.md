@@ -24,10 +24,14 @@ Supports ledge grabbing, climbing up and down, and traversal-ready extensions.
 ## 🚀 Getting Started
 
 1. Create or open a **C++ ThirdPerson** Unreal Engine project.
-2. Add the plugin to your project’s `Plugins/` directory.
-3. Regenerate project files and rebuild.
+2. Copy the plugin into your project’s `Plugins/` directory.
+3. Regenerate project files and rebuild the project.
 4. Enable the plugin in Unreal Editor if needed.
-5. Press play and start climbing.
+5. Press **Play** and start climbing (default keybind: **F**).
+
+🔎 Optional setup walkthrough (Windows example, step-by-step):  
+[How To Set Up The Plugin](https://youtube.com/watch?v=rnQOWEQ2M0Y&feature=youtu.be)
+
 
 ---
 ## 🎥 Demo
