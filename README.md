@@ -29,8 +29,7 @@ Supports ledge grabbing, climbing up and down, and traversal-ready extensions.
 4. Enable the plugin in Unreal Editor if needed.
 5. Press **Play** and start climbing (default keybind: **F**).
 
-🔎 Optional setup walkthrough (Windows example, step-by-step):  
-[How To Set Up The Plugin](https://youtube.com/watch?v=rnQOWEQ2M0Y&feature=youtu.be)
+🔎 Optional setup walkthrough video (Windows example, step-by-step):  [How To Set Up The Plugin](https://youtube.com/watch?v=rnQOWEQ2M0Y&feature=youtu.be)
 
 
 ---
