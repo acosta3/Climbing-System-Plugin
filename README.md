@@ -3,6 +3,8 @@
 A modular **Climbing System plugin** for **Unreal Engine 5.6**, built in **C++** and designed for **third-person games**.  
 Supports ledge grabbing, climbing up and down, and traversal-ready extensions.
 
+<p align="center"> <a href="https://www.youtube.com/watch?v=bDSDSq6FjFE"> <img src="https://img.youtube.com/vi/bDSDSq6FjFE/0.jpg" width="800" />
+
 ---
 ## 📦 Plugin Name
 
