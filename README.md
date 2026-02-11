@@ -144,10 +144,6 @@ Designed as a foundation for advanced traversal systems:
 
 ---
 
-## 📝 License
-
-[Your License Here]
-
 ---
 
 ## 🤝 Contributing
@@ -156,9 +152,7 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 
-<div align="center">
 
-**Built with ❤️ for the Unreal Engine community**
 
 [![YouTube](https://img.shields.io/badge/YouTube-Demo-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=bDSDSq6FjFE)
 [![GitHub](https://img.shields.io/badge/GitHub-Star-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/acosta3/Climbing-System-Plugin)
