@@ -10,22 +10,54 @@ Supports ledge grabbing, climbing up and down, and traversal-ready extensions.
 </p>
 
 ---
+#  Advanced Climbing System
 
-## 🔑 What Makes This Special
+##  What Makes This Special
 
-### 🎯 **Adaptive Motion on Uneven Geometry**
+###  Adaptive Motion on Uneven Geometry
 The climbing system uses **Inverse Kinematics (IK)** and **Motion Warping** to create smooth, natural-looking traversal **even on jagged, irregular surfaces**.
 
-**The Challenge:**  
-Real game environments have uneven ledges, angled surfaces, and varying heights. Traditional animation systems look robotic and break immersion when characters snap to fixed positions.
+---
 
-**The Solution:**
-- 🦾 **IK-Driven Hand/Foot Placement** - Character limbs dynamically adjust to surface geometry in real-time
-- 🎬 **Motion Warping** - Animations adapt their root motion to match actual ledge positions
-- 📐 **Multi-Point Surface Validation** - Multiple line traces ensure smooth contact even on bumpy surfaces
-- ✨ **Seamless Transitions** - No snapping, no floating hands - just fluid, believable movement
+## The Challenge
 
-**Result:** Characters climb like they're actually touching the world, not playing pre-baked animations.
+Real game environments have uneven ledges, angled surfaces, and varying heights. Traditional animation systems look robotic and break immersion when characters snap to fixed positions. 
+
+**The hardest part was accurately detecting climbable surfaces and determining proper character placement/orientation on irregular geometry without performance issues or visual artifacts.**
+
+---
+
+## ✅ The Solution
+
+### Core Systems
+
+- **Capsule Trace Detection**  
+  Uses the character's capsule for initial surface detection instead of single-point raycasts
+
+- **Surface-Aligned Orientation**  
+  Character rotation uses the **surface's normal vector** (obtained via capsule trace) **rather than the character's own orientation**, allowing natural snapping to walls at any angle
+
+- **Multi-Actor Averaging**  
+  Orientation calculated by averaging normals from **multiple hit actors** (limited to a fixed-size array for performance)
+
+- **Location Validation**  
+  Since averaging multiple points can produce "fake" locations that don't actually exist on geometry, the system **line traces back to the surface** to verify and correct placement
+
+- **Smooth Interpolation**  
+  Uses **FInterp (linear interpolation)** for snapping behavior, eliminating jarring position changes
+
+- **Custom Physics Mode**  
+  Leveraged and reworked Unreal's **Flying movement mode** to handle wall-attached traversal physics
+
+- **IK-Driven Hand/Foot Placement**  
+  Character limbs dynamically adjust to surface geometry in real-time
+
+- *Motion Warping**  
+  Animations adapt their root motion to match actual ledge positions
+
+---
+
+
 
 ---
 
@@ -78,11 +110,6 @@ Click the demo image above to watch the climbing system in action on YouTube.
 - ✅ **Hang State** - Stable ledge grip with physics-based holding
 - ✅ **Hop Up/Down** - Quick ledge transitions for small obstacles
 
-### Technical Highlights
-- 🦾 **Inverse Kinematics** - Real-time limb adjustment for uneven surfaces
-- 🎬 **Motion Warping** - Dynamic animation adaptation to actual geometry
-- 🏗️ **Modular Architecture** - Clean component-based design for easy extension
-- 🔧 **Production Ready** - Handles edge cases, false positives, and UE 5.6 compatibility
 
 ### Extensibility
 Designed as a foundation for advanced traversal systems:
@@ -122,25 +149,6 @@ Designed as a foundation for advanced traversal systems:
 
 ---
 
-## 🎯 Interview Talking Points
-
-**"How does your IK system handle performance?"**
-- IK only active during climbing states
-- Bone chains limited to hands/feet (not full body)
-- Traces cached and reused across frames when stable
-- LOD system could disable distant IK for background characters
-
-**"What edge cases did you solve?"**
-- False positives on thin ledges → Multi-trace validation
-- Floating hands on corners → Corner detection + fallback positions
-- Character getting stuck → State timeout + forced release
-- UE 5.6 module conflicts → Custom component architecture
-
-**"How would you extend this?"**
-- Add corner-turning by detecting perpendicular surfaces
-- Implement stamina system for long climbs
-- Support moving platforms via attachment logic
-- Add vaulting by detecting ledge height thresholds
 
 ---
 
