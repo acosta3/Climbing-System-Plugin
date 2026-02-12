@@ -23,7 +23,7 @@ The climbing system uses **Inverse Kinematics (IK)** and **Motion Warping** to c
 
 Real game environments have uneven ledges, angled surfaces, and varying heights. Traditional animation systems look robotic and break immersion when characters snap to fixed positions. 
 
-**The hardest part was accurately detecting climbable surfaces and determining proper character placement/orientation on irregular geometry without performance issues or visual artifacts.**
+**The hardest part was determining proper character placement/orientation on irregular geometry without performance issues or visual artifacts.**
 
 
 ## The Solution
