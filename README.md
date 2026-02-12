@@ -25,9 +25,8 @@ Real game environments have uneven ledges, angled surfaces, and varying heights.
 
 **The hardest part was accurately detecting climbable surfaces and determining proper character placement/orientation on irregular geometry without performance issues or visual artifacts.**
 
----
 
-## ✅ The Solution
+## The Solution
 
 ### Core Systems
 
